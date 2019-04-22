@@ -1,0 +1,31 @@
+source devel/setup.bash
+echo $ROS_PACKAGE_PATH
+catkin_make
+roscore
+rosnode list
+rosnode info <node_name> (ex: /rosout)
+rosnode ping <node_name>
+rosrun rqt_graph rqt_graph
+rosrun rqt_plot rqt_plot
+rostopic echo [topic] (ex: /turtle1/cmd_vel)
+rostopic type [topic]
+rosmsg show <msg_type/topic_type> (ex: geometry_msgs/Twist)
+rostopic pub [topic] [msg_type] [args]
+rosrun rqt_console rqt_console (show console window)
+rosrun rqt_logger_level rqt_logger_level (choose which is showed in console window)
+roslaunch [package] [filename.launch]
+rqt (run rqt_graph)
+ps -ef | grep -i rosmaster (check for roscore is running or not)
+
+---------------------------------------
+rosparam set [param_name]
+rosparam get [param_name]
+rosparam dump [file_name] [namespace]
+rosparam load [file_name] [namespace]
+rosed [package_name] [filename]
+
+---------------------------------------
+rosrun turtlesim turtlesim_node
+rosrun turtlesim turtlesim_node __name:=my_turtle
+rosrun turtlesim turtle_teleop_key
+rosservice call /clear
