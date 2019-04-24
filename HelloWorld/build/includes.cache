@@ -1,0 +1,32 @@
+[
+  {
+    "Sourcefile": "",
+    "Include": "",
+    "Includepath": "/home/nhphuong/Downloads/arduino-1.8.9-linux64/arduino-1.8.9/hardware/arduino/avr/cores/arduino"
+  },
+  {
+    "Sourcefile": "",
+    "Include": "",
+    "Includepath": "/home/nhphuong/Downloads/arduino-1.8.9-linux64/arduino-1.8.9/hardware/arduino/avr/variants/mega"
+  },
+  {
+    "Sourcefile": "/home/nhphuong/Documents/ROS/HelloWorld/build/sketch/HelloWorld.ino.cpp",
+    "Include": "ros.h",
+    "Includepath": "/home/nhphuong/Arduino/libraries/ros_lib"
+  },
+  {
+    "Sourcefile": "/home/nhphuong/Documents/ROS/HelloWorld/build/sketch/HelloWorld.ino.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "/home/nhphuong/Arduino/libraries/ros_lib/duration.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "/home/nhphuong/Arduino/libraries/ros_lib/time.cpp",
+    "Include": "",
+    "Includepath": ""
+  }
+]

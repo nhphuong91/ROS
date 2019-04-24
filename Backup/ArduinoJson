@@ -1,0 +1,8 @@
+{
+    "programmer": "AVRISP mkII",
+    "board": "arduino:avr:mega",
+    "configuration": "cpu=atmega2560",
+    "port": "/dev/ttyACM1",
+    "sketch": "HelloWorld.ino",
+    "output": "build"
+}
