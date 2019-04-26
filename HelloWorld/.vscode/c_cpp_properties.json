@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "/home/nhphuong/Downloads/arduino-1.8.9-linux64/arduino-1.8.9/tools/**",
+                "/home/nhphuong/Downloads/arduino-1.8.9-linux64/arduino-1.8.9/hardware/arduino/avr/**",
+                "/home/nhphuong/Arduino/libraries/ros_lib/**",
+                "${workspaceFolder}/**"
+            ],
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "forcedInclude": [
+                "/home/nhphuong/Downloads/arduino-1.8.9-linux64/arduino-1.8.9/hardware/arduino/avr/cores/arduino/Arduino.h"
+            ]
+        }
+    ],
+    "version": 4
+}
