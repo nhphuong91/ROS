@@ -30,7 +30,7 @@ rosrun turtlesim turtle_teleop_key
 rosservice call /clear
 
 ---------------------------------------
-source /opt/ros/kinetic/setup.bash
+source /opt/ros/[ROS-DISTRO]/setup.bash
 source devel/setup.bash
 ls -ltrh /dev/video*
 export PYTHONPATH="/usr/local/lib/python3.5/dist-package‌​s:$PYTHONPATH"
