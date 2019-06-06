@@ -42,6 +42,10 @@ export TURTLEBOT3_MODEL=burger, waffle, waffle_pi
 roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch/turtlebot3_world.launch/turtlebot3_house.launch
 roslaunch turtlebot3_gazebo turtlebot3_gazebo_rviz.launch
 roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=cartographer
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+roslaunch turtlebot3_gazebo turtlebot3_simulation.launch
+rosrun map_server map_saver -f ~/map
+roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
 
 sudo apt-get install ros-melodic-joy ros-melodic-teleop-twist-joy ros-melodic-teleop-twist-keyboard ros-melodic-laser-proc ros-melodic-rgbd-launch ros-melodic-depthimage-to-laserscan ros-melodic-rosserial-arduino ros-melodic-rosserial-python ros-melodic-rosserial-server ros-melodic-rosserial-client ros-melodic-rosserial-msgs ros-melodic-amcl ros-melodic-map-server ros-melodic-move-base ros-melodic-urdf ros-melodic-xacro ros-melodic-compressed-image-transport ros-melodic-rqt-image-view ros-melodic-gmapping ros-melodic-navigation ros-melodic-interactive-markers
 
