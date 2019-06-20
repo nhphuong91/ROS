@@ -51,4 +51,7 @@ sudo apt-get install ros-melodic-joy ros-melodic-teleop-twist-joy ros-melodic-te
 
 sudo apt-get install ros-melodic-cartographer ros-melodic-cartographer-ros ros-melodic-cartographer-ros-msgs ros-melodic-cartographer-rviz
 
+---------------------------------------
+rosrun rqt_tf_tree rqt_tf_tree
+rosrun tf tf_echo odom base_footprint
 
