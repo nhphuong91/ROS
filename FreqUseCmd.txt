@@ -36,6 +36,9 @@ ls -ltrh /dev/video*
 export PYTHONPATH="/usr/local/lib/python3.5/dist-package‌​s:$PYTHONPATH"
 export ROS_PYTHON_VERSION=3
 echo $ROS_PACKAGE_PATH
+export ROS_HOSTNAME=192.168.129.57
+export ROS_MASTER_URI=http://192.168.129.21:11311
+export | grep ROS
 
 ---------------------------------------
 export TURTLEBOT3_MODEL=burger, waffle, waffle_pi
@@ -54,4 +57,11 @@ sudo apt-get install ros-melodic-cartographer ros-melodic-cartographer-ros ros-m
 ---------------------------------------
 rosrun rqt_tf_tree rqt_tf_tree
 rosrun tf tf_echo odom base_footprint
+rosrun tf tf_monitor base_footprint base_link
+
+---------------------------------------
+sudo chmod 666 /dev/ttyUSB0
+roslaunch rplidar_ros view_rplidar.launch
+roslaunch rplidar_ros rplidar.launch
+rosrun rplidar_ros rplidarNodeClient
 
