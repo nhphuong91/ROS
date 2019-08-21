@@ -18,6 +18,7 @@ ps -ef | grep -i rosmaster (check for roscore is running or not)
 rosbag record -a (record all topic to bag file)
 rosbag record -O subset [topic1_name] [topic2_name] (record chosen topics to bag file)
 cartographer_rosbag_validate -bag_filename your_bag.bag
+rosbag record -O subset rpm xy_pos odom odometry/filtered tf tf_stac map scan submap_list scan_matched_points2
 
 ---------------------------------------
 rosparam set [param_name]
