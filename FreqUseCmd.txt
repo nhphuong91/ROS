@@ -70,3 +70,7 @@ roslaunch rplidar_ros view_rplidar.launch
 roslaunch rplidar_ros rplidar.launch
 rosrun rplidar_ros rplidarNodeClient
 
+---------------------------------------
+Problem with catkin profiles:
+sudo rm -rf /home/<user>/.catkin_tools
+
